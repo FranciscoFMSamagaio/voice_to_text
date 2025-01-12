@@ -30,7 +30,7 @@ def recognize_from_file(filename):
 def recognize_from_microphone(file_to_write):
     SAMPLE_RATE=44100
     duration = 5  # seconds
-    audio_recording = sd.rec(duration * SAMPLE_RATE, samplerate=SAMPLE_RATE, channels=2, dtype='int32')
+    audio_recording = sd.rec(duration * SAMPLE_RATE, samplerate=SAMPLE_RATE, channels=1, dtype='int32')
     print("Recording Audio")
     sd.wait()
     print(audio_recording)
